@@ -1,6 +1,6 @@
 <template>
   <aside class="bg-orange-700 flex flex-col justify-center items-center">
-    <div class="border-4 border-gray-600 rounded-full p-8 mb-4">
+    <div class="border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full p-8 mb-4">
       ME
     </div>
     <ul class="text-center space-y-3 text-gray-300 font-bold uppercase">
@@ -28,6 +28,7 @@ export default {
   methods: {
     changeTab(tab) {
       this.activeTab = tab;
+      this.$emit('tab-changed', this.activeTab);
     },
   },
 };
