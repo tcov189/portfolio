@@ -1,6 +1,6 @@
 <template>
-  <div class="container flex min-h-screen bg-gray-200">
-    <Sidebar />
+  <div class="flex min-h-screen bg-gray-200">
+    <Sidebar class="w-64" />
     <Content>
       <slot></slot>
     </Content>

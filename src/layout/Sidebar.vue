@@ -1,6 +1,6 @@
 <template>
-  <aside class="w-64 bg-orange-700 flex flex-col justify-center items-center">
-    <div class="border-2 border-gray-800 rounded-full p-8 mb-4">
+  <aside class="bg-orange-700 flex flex-col justify-center items-center">
+    <div class="border-4 border-gray-600 rounded-full p-8 mb-4">
       ME
     </div>
     <ul class="text-center space-y-3 text-gray-300 font-bold uppercase">
@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       activeTab: "about",
-      tabs: ["about", "experience", "skills", "interests"],
+      tabs: ["about", "experience", "education", "skills", "interests"],
     };
   },
   methods: {
