@@ -21,8 +21,8 @@
 export default {
   data() {
     return {
-      activeTab: "about",
-      tabs: ["about", "experience", "education", "skills", "interests"],
+      activeTab: "About",
+      tabs: ["About", "Experience", "Education", "Skills", "Interests"],
     };
   },
   methods: {

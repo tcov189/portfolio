@@ -1,23 +1,49 @@
 <template>
   <main class="flex min-h-screen bg-gray-200">
-    <Sidebar class="w-3/5 sm:w-1/6 md:w-1/5" />
+    <Sidebar @tab-changed="tabChanged" class="w-3/5 sm:w-1/6 md:w-1/5" />
     <section class="flex flex-col justify-center pl-12">
-      <About />
+      <transition name="component-fade" mode="out-in">
+        <component :is="view"></component>
+      </transition>
     </section>
   </main>
 </template>
 
 <script>
-
 import Sidebar from "@/components/Sidebar.vue";
 import About from "@/components/About.vue";
 
 export default {
   components: {
     Sidebar,
-    About
+    About,
+  },
+  data() {
+    return {
+      activeTab: "About",
+    };
+  },
+  computed: {
+    view() {
+      return this.activeTab;
+    }
+  },
+  methods: {
+    tabChanged(tab) {
+      this.activeTab = tab;
+    },
   },
 };
 </script>
 
-<style></style>
+<style scoped>
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.component-fade-enter-from,
+.component-fade-leave-to {
+  opacity: 0;
+}
+</style>
