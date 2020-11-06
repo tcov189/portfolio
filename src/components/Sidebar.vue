@@ -36,6 +36,6 @@ export default {
 
 <style scoped>
 .active {
-  @apply border-l-2 opacity-100;
+  @apply opacity-100;
 }
 </style>
