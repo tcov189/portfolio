@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div class="w-4/5" id="about">
     <h1 class="text-5xl leading- font-medium uppercase">
       Trevor <span class="text-orange-800">Covington</span>
     </h1>
@@ -8,17 +8,17 @@
     </p>
     <p class="mb-8">
       <DefaultLink
-        destination="tel:3193297493"
-        text="(319) 319-7493"
+        destination="mailto:tcovington189@gmail.com"
+        text="tcovington189@gmail.com"
         class="pr-2"
       />&nbsp;-&nbsp;
       <DefaultLink
-        destination="mailto:tcovington189@gmail.com"
-        text="tcovington189@gmail.com"
+        destination="tel:3193297493"
+        text="(319) 319-7493"
         class="pl-2"
       />
     </p>
-    <p class="w-4/5 text-lg mb-8">
+    <p class="text-lg mb-8">
       Hello, my name is Trevor Covington. I am an experienced web developer with
       extensive experience in multiple areas of web development from front end
       development to back end programming and database operations.

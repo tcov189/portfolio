@@ -1,7 +1,7 @@
 <template>
   <main class="flex min-h-screen bg-gray-200">
     <Sidebar @tab-changed="tabChanged" class="w-3/5 sm:w-1/6 md:w-1/5" />
-    <section class="flex flex-col justify-center pl-12">
+    <section class="w-4/5 flex flex-col justify-center pl-10">
       <transition name="component-fade" mode="out-in">
         <component :is="view"></component>
       </transition>
@@ -12,11 +12,13 @@
 <script>
 import Sidebar from "@/components/Sidebar.vue";
 import About from "@/components/About.vue";
+import Experience from "@/components/Experience.vue";
 
 export default {
   components: {
     Sidebar,
     About,
+    Experience,
   },
   data() {
     return {
@@ -30,6 +32,7 @@ export default {
   },
   methods: {
     tabChanged(tab) {
+      console.log(tab);
       this.activeTab = tab;
     },
   },
