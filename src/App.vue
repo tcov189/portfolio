@@ -13,12 +13,14 @@
 import Sidebar from "@/components/Sidebar.vue";
 import About from "@/components/About.vue";
 import Experience from "@/components/Experience.vue";
+import Education from "@/components/Education.vue";
 
 export default {
   components: {
     Sidebar,
     About,
     Experience,
+    Education,
   },
   data() {
     return {

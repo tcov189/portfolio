@@ -3,25 +3,21 @@
     <h2 class="text-3xl uppercase font-bold mt-2 mb-8">Experience</h2>
     <div class="space-y-12 w-4/5 mb-4">
        <div v-for="(job, index) in jobs" :key="`exp_${index}`">
-        <ExperienceRow :job="job"> </ExperienceRow>
+        <InfoRow :item="job"> </InfoRow>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ExperienceRow from "./Experience/ExperienceRow.vue";
 
 export default {
-  components: {
-    ExperienceRow,
-  },
   data() {
     return {
       jobs: [
         {
           title: "Software Developer",
-          company: "Hyphen Financial",
+          subtitle: "Hyphen Financial",
           time: "September 2020 - Present",
           description: [
             "Worked remotely with a team to modernize loan application software.",
@@ -31,7 +27,7 @@ export default {
         },
         {
           title: "Web Developer",
-          company: "VGM Forbin",
+          subtitle: "VGM Forbin",
           time: "July 2017 - September 2020",
           description: [
             "Created custom web applications for a wide variety of projects using mostly PHP for server side operations and MySql for database administration.",
@@ -43,7 +39,7 @@ export default {
         },
         {
           title: "Software Engineer",
-          company: "FabPro",
+          subtitle: "FabPro",
           time: "July 2018 - September 2018",
           description: [
             "Worked on legacy PHP application.",
@@ -52,7 +48,7 @@ export default {
         },
         {
           title: "User Interface Developer",
-          company: "TaxAct",
+          subtitle: "TaxAct",
           time: "January 2015 - May 2017",
           description: [
             "Design and develop web pages using front-end languages like HTML5, CSS3 and JavaScript/jQuery along with back end technologies including C# and SQL in a MVC.net architecture.",
@@ -62,7 +58,7 @@ export default {
         },
         {
           title: "Web Developer",
-          company: "August Home Publishing Company",
+          subtitle: "August Home Publishing Company",
           time: "June 2014 - January 2015",
           description: [
             "Developing projects utilizing languages such as HTML5, CSS3 and jQuery/JavaScript along with back end technologies including PHP and SQL.",
