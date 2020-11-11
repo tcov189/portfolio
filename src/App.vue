@@ -14,6 +14,7 @@ import Sidebar from "@/components/Sidebar.vue";
 import About from "@/components/About.vue";
 import Experience from "@/components/Experience.vue";
 import Education from "@/components/Education.vue";
+import Skills from "@/components/Skills.vue";
 
 export default {
   components: {
@@ -21,6 +22,7 @@ export default {
     About,
     Experience,
     Education,
+    Skills,
   },
   data() {
     return {
