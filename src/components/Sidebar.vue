@@ -1,6 +1,6 @@
 <template>
-  <aside class="bg-orange-700 flex flex-col justify-center items-center">
-    <div class="border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full p-8 mb-4">
+  <aside class="bg-orange-700 flex flex-col justify-center items-center shadow">
+    <div class="border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full p-8 mb-4" @click="changeTab('About')">
       ME
     </div>
     <ul class="text-center space-y-3 text-gray-300 font-bold uppercase">
@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       activeTab: "About",
-      tabs: ["About", "Experience", "Education", "Skills", "Interests"],
+      tabs: ["Skills", "Experience", "Education"],
     };
   },
   methods: {
