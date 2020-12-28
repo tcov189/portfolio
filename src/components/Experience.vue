@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen overflow-y-scroll w-100" id="experience">
+  <div class="h-screen overflow-y-scroll" id="experience">
     <h2 class="text-3xl uppercase font-bold mt-2 mb-8">Experience</h2>
-    <div class="space-y-12 w-4/5 mb-4">
+    <div class="space-y-12 mb-4">
        <div v-for="(job, index) in jobs" :key="`exp_${index}`">
         <InfoRow :item="job"> </InfoRow>
       </div>

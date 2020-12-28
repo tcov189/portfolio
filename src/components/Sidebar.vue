@@ -1,10 +1,17 @@
 <template>
-  <aside class="bg-orange-700 flex flex-col justify-center items-center shadow">
+  <aside class="bg-orange-700 flex sm:flex-col justify-center items-center shadow">
     <img
       src="../assets/images/profile.jpeg"
       alt="Profile picture"
-      class="border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full mb-4 w-24" @click="changeTab('About')" />
-    <ul class="text-center space-y-3 text-gray-300 font-bold uppercase">
+      class="hidden sm:block border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full mb-4" @click="changeTab('About')" />
+    <!-- <ul class="flex sm:block sm:space-y-3 py-2 text-center text-gray-300 font-bold uppercase">
+      <li
+        class="sm:hidden px-3 cursor-pointer hover:opacity-100 uppercase"
+        @click="changeTab('About')"
+        :class="{ active: activeTab == 'Active', 'opacity-75': activeTab !== 'Active' }"
+      >
+        About
+      </li>
       <li
         v-for="(tab, index) in tabs"
         class="px-3 cursor-pointer hover:opacity-100 uppercase"
@@ -14,7 +21,9 @@
       >
         {{ tab }}
       </li>
-    </ul>
+    </ul> -->
+    <FontAwesomeIcon icon="bars" type="fas" class="w-6 text-gray-300">
+    </FontAwesomeIcon>
   </aside>
 </template>
 

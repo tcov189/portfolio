@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen overflow-y-auto w-100" id="education">
+  <div class="h-screen overflow-y-auto" id="education">
     <h2 class="text-3xl uppercase font-bold mt-2 mb-8">Education</h2>
-    <div class="space-y-12 w-4/5 mb-4">
+    <div class="space-y-12 mb-4">
       <div v-for="(item, index) in items" :key="`exp_${index}`">
         <InfoRow :item="item"> </InfoRow>
       </div>

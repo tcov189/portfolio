@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100" id="skills">
+  <div id="skills">
     <h2 class="text-3xl uppercase font-bold mt-2 mb-4">Skills</h2>
     <h3 class="mb-4 text-lg font-semibold">Programming Languages</h3>
     <div class="flex space-x-12">

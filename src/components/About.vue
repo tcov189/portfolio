@@ -1,5 +1,5 @@
 <template>
-  <div class="w-4/5" id="about">
+  <div id="about">
     <h1 class="text-5xl leading- font-medium uppercase">
       Trevor <span class="text-orange-800">Covington</span>
     </h1>

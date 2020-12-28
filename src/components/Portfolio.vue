@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100" id="portfolio">
+  <div id="portfolio">
     <h2 class="text-3xl uppercase font-bold mt-2 mb-8">Portfolio</h2>
     <div class="flex">
         <PortfolioItem />

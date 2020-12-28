@@ -1,5 +1,5 @@
 <template>
-  <div class="border border-gray-600 rounded w-1/2 bg-gray-100 shadow">
+  <div class="border border-gray-600 rounded bg-gray-100 shadow">
     <div class="bg-green-700 p-2 border-gray-600 border-b flex justify-center items-center">
       <img class="w-1/6" src="/images/portfolio/strokes/logo.png" alt="" />
       <div class="text-gray-200 ml-2 text-2xl">
