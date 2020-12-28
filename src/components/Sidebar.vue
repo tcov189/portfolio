@@ -1,8 +1,9 @@
 <template>
   <aside class="bg-orange-700 flex flex-col justify-center items-center shadow">
-    <div class="border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full p-8 mb-4" @click="changeTab('About')">
-      ME
-    </div>
+    <img
+      src="../assets/images/profile.jpeg"
+      alt="Profile picture"
+      class="border-4 border-gray-300 border-opacity-75 cursor-pointer rounded-full mb-4 w-24" @click="changeTab('About')" />
     <ul class="text-center space-y-3 text-gray-300 font-bold uppercase">
       <li
         v-for="(tab, index) in tabs"
