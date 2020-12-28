@@ -1,26 +1,58 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main class="flex min-h-screen bg-gray-200">
+    <Sidebar @tab-changed="tabChanged" class="w-3/5 sm:w-1/6 md:w-1/5" />
+    <section class="w-4/5 flex flex-col justify-center pl-10 text-gray-700">
+      <transition name="component-fade" mode="out-in">
+        <component :is="view"></component>
+      </transition>
+    </section>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Sidebar from "@/components/Sidebar.vue";
+import About from "@/components/About.vue";
+import Experience from "@/components/Experience.vue";
+import Education from "@/components/Education.vue";
+import Skills from "@/components/Skills.vue";
+import Portfolio from "@/components/Portfolio.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Sidebar,
+    About,
+    Experience,
+    Education,
+    Skills,
+    Portfolio,
+  },
+  data() {
+    return {
+      activeTab: "About",
+    };
+  },
+  computed: {
+    view() {
+      return this.activeTab;
+    }
+  },
+  methods: {
+    tabChanged(tab) {
+      console.log(tab);
+      this.activeTab = tab;
+    },
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.component-fade-enter-from,
+.component-fade-leave-to {
+  opacity: 0;
 }
 </style>
