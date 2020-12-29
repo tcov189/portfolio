@@ -4,7 +4,7 @@
       class="sm:w-1/5 md:w-1/6 lg:w-2/8"
       @tab-changed="tabChanged"
     />
-    <section class="flex flex-col text-gray-700 sm:w-4/5 sm:justify-center sm:pl-10">
+    <section class="p-4 flex flex-col text-gray-700 sm:w-4/5 sm:justify-center sm:pl-10">
       <transition name="component-fade" mode="out-in">
         <component :is="view"></component>
       </transition>
