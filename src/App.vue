@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col min-h-screen sm:flex-row">
-    <Sidebar
-      class="sm:w-1/5"
+    <Menu
+      class="sm:w-1/5 md:w-1/6 lg:w-2/8"
       @tab-changed="tabChanged"
     />
     <section class="flex flex-col text-gray-700 sm:w-4/5 sm:justify-center sm:pl-10">
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar.vue";
+import Menu from "@/components/Menu.vue";
 import About from "@/components/About.vue";
 import Experience from "@/components/Experience.vue";
 import Education from "@/components/Education.vue";
@@ -22,12 +22,12 @@ import Portfolio from "@/components/Portfolio.vue";
 
 export default {
   components: {
-    Sidebar,
     About,
     Experience,
     Education,
     Skills,
     Portfolio,
+    Menu
   },
   data() {
     return {
