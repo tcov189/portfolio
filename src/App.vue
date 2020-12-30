@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col min-h-screen sm:flex-row">
     <Menu
-      class="sm:w-2/5 lg:w-1/6"
+      class="sm:w-1/5 md:w-1/6 lg:w-1/6"
       @tab-changed="tabChanged"
     />
     <section class="p-4 flex flex-col text-gray-700 sm:justify-center sm:pl-10">
