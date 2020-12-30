@@ -1,10 +1,11 @@
 <template>
   <main class="flex flex-col min-h-screen sm:flex-row">
     <Menu
-      class="sm:w-1/5 md:w-1/6 lg:w-1/6"
+      class="sm:w-1/5 md:w-1/6"
       @tab-changed="tabChanged"
     />
-    <section class="px-4 py-2 flex flex-col text-gray-700 sm:justify-center sm:pl-10">
+    <section
+      class="px-4 py-2 flex flex-col text-gray-700 sm:justify-center sm:pl-10 sm:w-4/5 md:w-5/6">
       <transition name="component-fade" mode="out-in">
         <component :is="view"></component>
       </transition>
@@ -51,7 +52,7 @@ export default {
 <style scoped>
 .component-fade-enter-active,
 .component-fade-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 .component-fade-enter-from,
