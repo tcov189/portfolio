@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="flex justify-between">
-      <p class="uppercase font-bold text-lg">{{ item.title }}</p>
+    <div class="flex flex-col justify-between sm:flex-row">
+      <p class="uppercase font-bold text-lg mb-3">{{ item.title }}</p>
       <div class="text-orange-800">
         {{ item.time }}
       </div>

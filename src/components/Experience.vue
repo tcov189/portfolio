@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen overflow-y-scroll" id="experience">
+  <div class="h-screen max-w-4xl" id="experience">
     <h2 class="text-3xl uppercase font-bold mt-2 mb-8">Experience</h2>
     <div class="space-y-12 mb-4">
        <div v-for="(job, index) in jobs" :key="`exp_${index}`">
