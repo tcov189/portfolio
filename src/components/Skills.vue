@@ -4,20 +4,24 @@
     <h3 class="mb-4 text-lg font-semibold">Programming Languages</h3>
     <div class="flex flex-wrap md:flex-no-wrap md:space-x-10 md:max-w-2xl">
         <div class="language-card">
+            <FontAwesomeIcon icon="php" type="fab" class="w-12 h-full text-purple-600" />
+            <p>PHP</p>
+        </div>
+        <div class="language-card">
             <FontAwesomeIcon icon="laravel" type="fab" class="w-12 h-full text-red-700" />
             <p>Laravel</p>
         </div>
         <div class="language-card">
-            <FontAwesomeIcon icon="php" type="fab" class="w-12 h-full text-purple-600" />
-            <p>PHP</p>
+            <FontAwesomeIcon icon="js" type="fab" class="w-12 h-full text-yellow-600" />
+            <p>JavaScript</p>
         </div>
         <div class="language-card">
             <FontAwesomeIcon icon="vuejs" type="fab" class="w-12 h-full text-green-600" />
             <p>Vue&nbsp;JS</p>
         </div>
         <div class="language-card">
-            <FontAwesomeIcon icon="js" type="fab" class="w-12 h-full text-yellow-600" />
-            <p>JavaScript</p>
+            <FontAwesomeIcon icon="react" type="fab" class="w-12 h-full text-blue-500" />
+            <p>React&nbsp;JS</p>
         </div>
         <div class="language-card">
             <FontAwesomeIcon icon="html5" type="fab" class="w-12 h-full text-orange-600" />
