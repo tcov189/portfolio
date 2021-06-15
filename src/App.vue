@@ -5,7 +5,7 @@
       @tab-changed="tabChanged"
     />
     <section
-      class="px-4 py-2 flex flex-col text-gray-700 sm:justify-center h-auto sm:pl-10 sm:w-4/5 md:w-3/4 lg:w-9/12">
+      class="flex flex-col text-gray-700 sm:justify-center sm:pl-10 sm:w-4/5 md:w-3/4 lg:w-9/12 xl:w-5/6">
       <transition name="component-fade" mode="out-in">
         <component :is="view"></component>
       </transition>
