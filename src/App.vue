@@ -1,11 +1,11 @@
 <template>
   <main class="flex flex-col min-h-screen sm:flex-row">
     <Menu
-      class="sm:w-1/5 md:w-1/6"
+      class="sm:w-1/5 md:w-1/4 lg:w-3/12 xl:w-1/6"
       @tab-changed="tabChanged"
     />
     <section
-      class="px-4 py-2 flex flex-col text-gray-700 sm:justify-center sm:pl-10 sm:w-4/5 md:w-5/6">
+      class="px-4 py-2 flex flex-col text-gray-700 sm:justify-center h-auto sm:pl-10 sm:w-4/5 md:w-3/4 lg:w-9/12">
       <transition name="component-fade" mode="out-in">
         <component :is="view"></component>
       </transition>
